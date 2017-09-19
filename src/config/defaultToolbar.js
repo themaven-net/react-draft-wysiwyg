@@ -23,6 +23,7 @@ import undo from '../../images/undo.svg';
 import redo from '../../images/redo.svg';
 import subscript from '../../images/subscript.svg';
 import superscript from '../../images/superscript.svg';
+import upload from '../../images/upload.svg';
 
 /**
 * This is default toolbar configuration,
@@ -161,6 +162,17 @@ export default {
       width: 'auto',
     },
     title: undefined,
+  },
+  file: {
+    icon: upload,
+    className: undefined,
+    component: undefined,
+    popupClassName: undefined,
+    urlEnabled: true,
+    uploadEnabled: true,
+    alignmentEnabled: true,
+    uploadCallback: undefined,
+    inputAccept: 'application/pdf',
   },
   remove: { icon: eraser, className: undefined, component: undefined, title: undefined },
   history: {
