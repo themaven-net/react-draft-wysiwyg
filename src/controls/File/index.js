@@ -52,12 +52,9 @@ class FileControl extends Component {
     this.signalExpanded = false;
   }
 
-  addFile: Function = (src: string, height: string, width: string, alt: string): void => {
+  addFile: Function = (src: string): void => {
     const { editorState, onChange, config } = this.props;
     const entityData = { url: src };
-    if (config.alt.present) {
-      entityData.alt = alt;
-    }
     const entityKey = editorState
       .getCurrentContent()
       .createEntity('LINK', 'MUTABLE', entityData)
