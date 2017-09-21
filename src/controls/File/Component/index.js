@@ -158,7 +158,6 @@ class LayoutComponent extends Component {
         uploadEnabled,
         urlEnabled,
         inputAccept,
-        alt: altConf,
       },
       doCollapse,
       translations,
@@ -238,7 +237,7 @@ class LayoutComponent extends Component {
           <button
             className="rdw-image-modal-btn"
             onClick={this.addImageFromState}
-            disabled={!imgSrc || !height || !width || (altConf.mandatory && !alt)}
+            disabled={!imgSrc}
           >
             {translations['generic.add']}
           </button>
