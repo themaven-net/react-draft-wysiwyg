@@ -133,7 +133,7 @@ class LayoutComponent extends Component {
   fileUploadClick = (event) => {
     this.fileUpload = true;
     event.stopPropagation();
-  }
+  };
 
   stopPropagation: Function = (event: Object): void => {
     if (!this.fileUpload) {

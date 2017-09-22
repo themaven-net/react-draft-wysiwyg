@@ -172,7 +172,7 @@ export default {
     uploadEnabled: true,
     alignmentEnabled: true,
     uploadCallback: undefined,
-    inputAccept: 'application/pdf',
+    inputAccept: undefined, // accept all file types by default
   },
   remove: { icon: eraser, className: undefined, component: undefined, title: undefined },
   history: {
