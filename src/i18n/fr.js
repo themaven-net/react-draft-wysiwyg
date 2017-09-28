@@ -28,6 +28,12 @@ module.exports = {
   // Emoji
   'components.controls.emoji.emoji': 'Emoji',
 
+  // File
+  'components.controls.file.file': 'Fichier',
+  'components.controls.file.fileUpload': 'Téléchargement',
+  'components.controls.file.byURL': 'URL',
+  'components.controls.file.dropFileText': 'Glisser une fichier ou cliquer pour télécharger',
+
   // FontFamily
   'components.controls.fontfamily.fontfamily': 'Police',
 
