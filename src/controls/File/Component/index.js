@@ -173,7 +173,7 @@ class LayoutComponent extends Component {
               onClick={this.showImageUploadOption}
               className="rdw-image-modal-header-option"
             >
-              {translations['components.controls.image.fileUpload']}
+              {translations['components.controls.file.fileUpload']}
               <span
                 className={classNames(
                   'rdw-image-modal-header-label',
@@ -186,7 +186,7 @@ class LayoutComponent extends Component {
               onClick={this.showImageURLOption}
               className="rdw-image-modal-header-option"
             >
-              {translations['components.controls.image.byURL']}
+              {translations['components.controls.file.byURL']}
               <span
                 className={classNames(
                   'rdw-image-modal-header-label',
@@ -210,7 +210,7 @@ class LayoutComponent extends Component {
                   htmlFor="file"
                   className="rdw-image-modal-upload-option-label"
                 >
-                  {imgSrc || translations['components.controls.image.dropFileText']}
+                  {imgSrc || translations['components.controls.file.dropFileText']}
                 </label>
               </div>
               <input
@@ -224,7 +224,7 @@ class LayoutComponent extends Component {
             <div className="rdw-image-modal-url-section">
               <input
                 className="rdw-image-modal-url-input"
-                placeholder={translations['components.controls.image.enterlink']}
+                placeholder={translations['components.controls.file.enterlink']}
                 name="imgSrc"
                 onChange={this.updateValue}
                 onBlur={this.updateValue}
@@ -275,7 +275,7 @@ class LayoutComponent extends Component {
           className={classNames(className)}
           value="unordered-list-item"
           onClick={onExpandEvent}
-          title={title || translations['components.controls.image.image']}
+          title={title || translations['components.controls.file.file']}
         >
           <img
             src={icon}
