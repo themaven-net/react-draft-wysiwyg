@@ -424,7 +424,7 @@ export default class WysiwygEditor extends Component {
           {toolbar.options.map((opt, index) => {
             const Control = Controls[opt];
             const config = toolbar[opt];
-            if (opt === 'image' && uploadCallback) {
+            if ((opt === 'image' || opt === 'file') && uploadCallback) {
               config.uploadCallback = uploadCallback;
             }
             return <Control key={index} {...controlProps} config={config} />;

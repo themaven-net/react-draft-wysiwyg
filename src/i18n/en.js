@@ -29,6 +29,12 @@ module.exports = {
   // Emoji
   'components.controls.emoji.emoji': 'Emoji',
 
+  // File
+  'components.controls.file.file': 'File',
+  'components.controls.file.fileUpload': 'File Upload',
+  'components.controls.file.byURL': 'URL',
+  'components.controls.file.dropFileText': 'Drop the file or click to upload',
+
   // FontFamily
   'components.controls.fontfamily.fontfamily': 'Font',
 
