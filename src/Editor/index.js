@@ -320,7 +320,7 @@ export default class WysiwygEditor extends Component {
     'localization', 'toolbarOnFocus', 'toolbar', 'toolbarCustomButtons', 'toolbarClassName',
     'editorClassName', 'toolbarHidden', 'wrapperClassName', 'toolbarStyle', 'editorStyle',
     'wrapperStyle', 'uploadCallback', 'onFocus', 'onBlur', 'onTab', 'mention', 'hashtag',
-    'ariaLabel', 'customBlockRenderFunc', 'customDecorators',
+    'ariaLabel', 'customBlockRenderFunc', 'customDecorators', 'onLinkChange',
   ]);
 
   changeEditorState = (contentState) => {
@@ -394,6 +394,7 @@ export default class WysiwygEditor extends Component {
       wrapperStyle,
       uploadCallback,
       ariaLabel,
+      onLinkChange,
     } = this.props;
 
     const controlProps = {
