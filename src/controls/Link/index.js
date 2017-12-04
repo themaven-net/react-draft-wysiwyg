@@ -55,6 +55,10 @@ class Link extends Component {
   };
 
   onChange = (action, title, url, attributes) => {
+    const { config } = this.props;
+    if (config && config.onLinkChange) {
+      config.onLinkChange(action, title, url, attributes);
+    }
     if (action === 'link') {
       this.addLink(title, url, attributes);
     } else {
