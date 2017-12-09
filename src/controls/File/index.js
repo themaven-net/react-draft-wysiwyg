@@ -57,8 +57,9 @@ class FileControl extends Component {
     const entityData = { url: src };
     const entityKey = editorState
       .getCurrentContent()
-      .createEntity('LINK', 'MUTABLE', entityData)
+      .createEntity('TEXT', 'MUTABLE', entityData)
       .getLastCreatedEntityKey();
+
     const newEditorState = AtomicBlockUtils.insertAtomicBlock(
       editorState,
       entityKey,
