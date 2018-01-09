@@ -130,7 +130,7 @@ class Link extends Component {
     }
     const entityKey = editorState
       .getCurrentContent()
-      .createEntity('LINK', 'MUTABLE', { ...linkAttributes, url: linkUrl })
+      .createEntity('LINK', 'IMMUTABLE', { ...linkAttributes, url: linkUrl })
       .getLastCreatedEntityKey();
 
     let contentState = Modifier.replaceText(
@@ -151,11 +151,12 @@ class Link extends Component {
     contentState = Modifier.insertText(
       newEditorState.getCurrentContent(),
       selection,
-      ' ',
+      '',
       newEditorState.getCurrentInlineStyle(),
       undefined,
     );
-    onChange(EditorState.push(newEditorState, contentState, 'insert-characters'));
+    onChange(EditorState.push(newEditorState, contentState, 'insert-characters'), true);
+
     this.doCollapse();
   };
 
